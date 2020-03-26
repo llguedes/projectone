@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+print('teste')
+=======
 class Hangman:
 
     #metodo construtor
@@ -79,3 +82,4 @@ class Hangman:
 
         print ('\nFoi bom jogar com você! Agora vá estudar!\n')
     
+>>>>>>> master
