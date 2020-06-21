@@ -17,8 +17,8 @@ def consulta_bc(cod):
     df.set_index('data', inplace=True)
     return df
 
-ipca = consulta_bc(cod)
-plt.plot(ipca)
+serie = consulta_bc(cod)
+plt.plot(serie)
 plt.show()
 
 
