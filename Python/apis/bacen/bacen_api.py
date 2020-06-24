@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.rcParams['figure.figsize'] = (16,8)
 
+print("Voce pode consultar o codigo da serie aqui:\n https://www3.bcb.gov.br/sgspub/localizarseries/localizarSeries.do?method=prepararTelaLocalizarSeries \n")
 cod_bcb = input("Entre com o codigo da serie: ")
 cod = int(cod_bcb)
 
