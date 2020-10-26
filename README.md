@@ -1,2 +1,0 @@
-# projectone
-Space for developers
