@@ -37,7 +37,7 @@ for names in employees:
     }
 
     headers = {
-        'client_id': '5cb9e202-f98b-4d12-8253-b6a6b10a2b53',
+        'client_id': '',
         'Authorization': f'Bearer {token}',
         'Content-Type': 'application/json'
     }
