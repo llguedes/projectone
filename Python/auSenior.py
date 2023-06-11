@@ -98,8 +98,11 @@ for names in employees:
                 first = datetime.strptime(first_clock_time, "%H:%M").time()
                 second = datetime.strptime(second_clock_time, "%H:%M").time()
                 
+                events = [first, second]
+                order = sorted(events)
+                
                 cursor = connection.cursor()
-                cursor.execute(sql, (first, second, '00:00', '00:00', '00:00', '00:00', search_date, 0, db_date, names))
+                cursor.execute(sql, (order[0], order[1], '00:00', '00:00', '00:00', '00:00', search_date, 0, db_date, names))
                 connection.commit()
                 count = 2
 
@@ -115,8 +118,11 @@ for names in employees:
                 second = datetime.strptime(second_clock_time, "%H:%M").time()
                 third = datetime.strptime(third_clock_time, "%H:%M").time()
                 
+                events = [first, second, third]
+                order = sorted(events)
+                
                 cursor = connection.cursor()
-                cursor.execute(sql, (first, second, third, '00:00', '00:00', '00:00', search_date, 0, db_date, names))
+                cursor.execute(sql, (events[0], events[1], events[2], '00:00', '00:00', '00:00', search_date, 0, db_date, names))
                 connection.commit()
                 count = 3
 
@@ -134,8 +140,11 @@ for names in employees:
                 third = datetime.strptime(third_clock_time, "%H:%M").time()
                 fourth = datetime.strptime(fourth_clock_time, "%H:%M").time()
                 
+                events = [first, second, third, fourth]
+                order = sorted(events)
+                
                 cursor = connection.cursor()
-                cursor.execute(sql, (first, second, third, fourth, '00:00', '00:00', search_date, 0, db_date, names))
+                cursor.execute(sql, (order[0], order[1], order[2], order[3], '00:00', '00:00', search_date, 0, db_date, names))
                 connection.commit()
                 count = 4
 
@@ -155,8 +164,11 @@ for names in employees:
                 fourth = datetime.strptime(fourth_clock_time, "%H:%M").time()
                 fifth = datetime.strptime(fifth_clock_time, "%H:%M").time()
                 
+                events = [first, second, third, fourth, fifth]
+                order = sorted(events)
+                
                 cursor = connection.cursor()
-                cursor.execute(sql, (first, second, third, fourth, fifth, '00:00', search_date, 0, db_date, names))
+                cursor.execute(sql, (order[0], order[1], order[2], order[3], order[4], '00:00', search_date, 0, db_date, names))
                 connection.commit()
                 count = 5
 
@@ -178,8 +190,11 @@ for names in employees:
                 fifth = datetime.strptime(fifth_clock_time, "%H:%M").time()
                 sixth = datetime.strptime(sixth_clock_time, "%H:%M").time()
                 
+                events = [first, second, third, fourth, fifth, sixth]
+                order = sorted(events)
+                
                 cursor = connection.cursor()
-                cursor.execute(sql, (first, second, third, fourth, fifth, sixth, search_date, 0, db_date, names))
+                cursor.execute(sql, (order[0], order[1], order[2], order[3], order[4], order[5], search_date, 0, db_date, names))
                 connection.commit()
                 count = 6
 
